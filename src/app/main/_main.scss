@@ -21,7 +21,7 @@ body {
   z-index: 2;
   height: 370px;
   background-image: url(/assets/images/bg.jpg);
-  background-size: 100%;
+  background-size: 1920px 398px;
   background-position: center 0;
   @include image-2x("/assets/images/bg@2x.jpg", 1920px, auto);
 
