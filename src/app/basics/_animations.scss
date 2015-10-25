@@ -1,0 +1,24 @@
+@include keyframes(colorBow) {
+  0% {
+    color: #C3C9D0;
+  }
+
+  33% {
+    //transform: scale(1.1);
+    transform: translate(0, -5px);
+  }
+
+  50% {
+    color: #79B7FF;
+    transform: translate(0, 1px);
+  }
+
+  66% {
+    //transform: scale(1.05);
+    transform: translate(0, -2px);
+  }
+
+  100% {
+    color: #C3C9D0;
+  }
+}

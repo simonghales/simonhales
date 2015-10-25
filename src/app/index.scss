@@ -3,8 +3,16 @@
 // bower:scss
 // endbower
 
+@import "basics/reset";
+@import "basics/mixins";
+@import "basics/animations";
+
+@import "basics/typography";
+@import "basics/general";
+
+@import "main/main";
 
 /* Do not remove the comments below. It's the markers used by gulp-inject to inject
    all your sass files automatically */
-// injector
-// endinjector
+// TEMPREMOVED injector
+// TEMPREMOVED endinjector
