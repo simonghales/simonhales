@@ -91,12 +91,14 @@ body {
 .externals {
   margin-top: 10px;
   font-size: .9em;
+  color: #9FB0C1;
 
   > li {
     margin: 4px 0;
   }
 
   .icon {
+    color: #B9C6D4;
     font-size: .9em;
     display: inline-block;
     padding-right: 2px;
@@ -236,6 +238,63 @@ body {
     font-weight: 700;
     //@include border-radius(3px);
     //@include box-shadow(0, 0, 1px, black);
+  }
+
+}
+
+.overview {
+  @extend .clearfix;
+}
+
+.overviewList {
+  margin-right: 30px;
+  float: left;
+  min-width: 200px;
+  //box-shadow: 0 0 1px rgba(0, 0, 0, 0.26);
+  @include border-radius(5px);
+  background-color: rgba(0, 0, 0, 0.03);
+  position: relative;
+  color: #394B5F;
+
+  h3 {
+    font-weight: bold;
+    padding: 13px 16px;
+    //background-color: rgba(255, 255, 255, 0.04);
+    @include background-gradient(rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0));
+    @include border-radius-separate(5px, 5px, 0, 0);
+
+    .icon {
+      display: none;
+    }
+
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 60px;
+    @include background-gradient(rgba(0,0,0,0), rgba(24, 40, 70, 0.06));
+    @include border-radius-separate(0, 0, 5px, 5px);
+  }
+
+}
+
+.skills {
+  font-size: .9em;
+  font-weight: 500;
+  color: #263546;
+
+  > li {
+    margin: 10px 18px 10px 18px;
+  }
+
+  span {
+    line-height: 1.8em;
+    //background-color: rgba(0,0,0,0.2);
+    //@include border-radius(3px);
   }
 
 }
